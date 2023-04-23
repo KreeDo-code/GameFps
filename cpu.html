@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game FPS</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>G@me</strong> FPS</a>
+
+                <button class="dark-mode-btn">
+                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Projects</a></li>
+                    <li class="nav-list__item"><a href="./cpu.html" class="nav-list__link nav-list__link--active">
+                        Comparison CPU </a></li>
+                    <li class="nav-list__item"><a href="./donation.html" class="nav-list__link">Donations for UA</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <div class="project-details">
+                <h1 class="title-1">Порівняння процесорів</h1>
+               <img src="./img/poster_cpu.jpg" alt="" class="project-details__cover">
+                 <div class="vs-info">
+        <div class="choose_configuration">
+    <form action="..." method="post" class="cirt-form-cpu">
+      <input type="hidden" name="_token" value="JM6Lo6yBOi6GX0OkUwsG0n4ySj8mZwmlLsGZYaC4">      <label class="choose_cirt">Процесор №1<div class="choose_cpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_cpus" onkeyup="javascript:load_data(this.value, 'cpus', 'cpus', 'game')" autocomplete="off"><span id="search_result_cpus"></span></div></label>
+      <label class="choose_cirt">Процесор №2<div class="choose_gpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_videocards" onkeyup="javascript:load_data(this.value, 'videocards', 'videocards', 'game')" autocomplete="off"><span id="search_result_videocards"></span></div></label>
+      <button type="submit" class="send_configuration">Порівняти</button>
+    </form>
+  </div>
+      </div>
+<!--
+                <div class="vs-choose-inputs">
+      <label class="choose_cpu_class"><div class="choose_cpu_page"><input class="search-content" data-id="288" data-hurl="Core-i5-9400F" placeholder="Введите название..." name="search_1" onkeyup="javascript:load_data(this.value, 'cpus', '1', 'compare')" autocomplete="off" value=""><span id="search_result_1"></span></div></label>     
+      <label class="choose_cpu_class"><div class="choose_cpu_page"><input class="search-content" data-id="84" data-hurl="Ryzen-5-5600X" placeholder="Введите название..." name="search_2" onkeyup="javascript:load_data(this.value, 'cpus', '2', 'compare')" autocomplete="off" value=""><span id="search_result_2"></span></div></label>
+               <button type="submit" class="send_configuration">Перевірити</button>     
+    </div> 
+-->
+            <div class="vs-benchs">
+    <h2 class="title-3">Порівняння у бенчмарках</h2>
+    <div class="cpu-tabs">
+    <div class="buttonWrapper">
+      <button class="tab-button active" data-id="passmark">Passmark</button>
+                        <button class="tab-button" data-id="geekbench_single">GeekBench 5 Single-Core</button>
+                  <button class="tab-button" data-id="geekbench_multi">GeekBench 5 Multi-Core</button>
+                  </div>
+    <div class="contentWrapper">
+      <div class="content active" id="passmark">
+        <p class="text-info-p">
+          У бенчмарку Passmark проводиться розширена перевірка процесора за допомогою багатопоточності. Виконуються складні математичні обчислення, включаючи фізичне моделювання, стиснення та шифрування.
+          
+        </p>
+        <div class="cpu-bench">
+          <div class="cpu-bench-chart">
+            <div class="cpu-bench-score" style="width: 9.7%">
+            </div>
+            <div class="cpu-bench-name">
+              Процесор №1
+            </div>
+            <div class="cpu-bench-result">
+              бали             </div>
+          </div>
+          
+        </div>
+        <div class="cpu-bench">
+          <div class="cpu-bench-chart">
+            <div class="cpu-bench-score" style="width: 22.4%">
+            </div>
+            <div class="cpu-bench-name">
+              Процесор №2
+            </div>
+            <div class="cpu-bench-result">
+              бали  (+... %)             </div>
+          </div>
+          
+        </div>
+      </div>
+                        <div class="content" id="geekbench_single">
+            <p class="text-info-p">
+              GeekBench Single-Core встановлює завдання процесора, які він повинен виконати за допомогою одного потоку. Чим швидше процесор виконає завдання – тим більше балів отримує.
+            </p>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 77.8%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №1
+                </div>
+                <div class="cpu-bench-result">
+                   бали (+... %)                 </div>
+              </div>
+            </div>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 50.8%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №2
+                </div>
+                <div class="cpu-bench-result">
+                  бали
+                </div>
+              </div>
+            
+            </div>
+          </div>
+                  <div class="content" id="geekbench_multi">
+            <p class="text-info-p">
+              GeekBench 5 Multi-Core дозволяє обчислити продуктивність процесора за допомогою всіх доступних потоків.
+            </p>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 31.9%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №1
+                </div>
+                <div class="cpu-bench-result">
+                   бали (+... %)                 </div>
+              </div>
+              
+            </div>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 17.8%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №2
+                </div>
+                <div class="cpu-bench-result">
+                  бали
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <div class="vs-compare-basic">
+    <h2 class="title-3">Порівняння базових характеристик</h2>
+    <p class="text-info-p">
+      Характеристики конкретно описують технічні дані процесора і дозволяють дізнатися багато цікавого: який сокет має бути у материнської плати при покупці процесора, скільки ядер і потоків у процесора, яка частота і так далі. Це основні дані про потужність процесора, але більшою мірою потрібно враховувати реальні тести у програмах та іграх.
+    </p>
+    <div class="compare-tables">
+      <div class="cpu-tables-parts">
+        <h3 class="title-4">Основні характеристики</h3>
+        <table class="cpu-table compare-table">
+
+          <tbody>
+            <tr class="sticky">
+                <th class="th-unknown"></th><th class="th-first">Процесор №1</th><th class="th-second">Процесор №2</th>
+            </tr>
+            <tr>
+              <td class="cell-h">Сокет підключення</td>
+              <td>FCLGA1151 </td>
+              <td>AM4 </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cpu-td-info">
+                <b>*</b> Сокет підключення – важлива складова. По ньому підбирається материнська плата.
+              </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Кількість ядер</td>
+              <td>6  </td>
+              <td>6  </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Кількість потоків</td>
+              <td>6  </td>
+              <td>12   <span class="green">(+100%)</span> </td>
+            </tr>
+            <tr>
+              <td class="cell-h">Максимальна тактова частота</td>
+              <td>4.1 GHz  </td>
+              <td>4.6 GHz   <span class="green">(+12.2%)</span> </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cpu-td-info">
+                <b>*</b> Максимальна частота процесора досягається за допомогою навантаження на процесор і при необхідності. Також можна розігнати процесор, виставивши для цього відповідний множник.
+              </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Базова тактова частота</td>
+              <td>2.9 GHz  </td>
+              <td>3.7 GHz   <span class="green">(+27.6%)</span> </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Максимальна температура</td>
+              <td>100  °C </td>
+              <td> °C </td>
+            </tr>
+            <tr>
+              <td class="cell-h">Вбудована графічна картка</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cpu-td-info">
+                <b>*</b> Дозволяє комп'ютеру працювати без повноцінної дискретної відеокарти та без графічного чіпа на материнській платі.
+              </td>
+            </tr>
+            <tr>
+              <td class="cell-h">Енергоспоживання</td>
+              <td>65 W  </td>
+              <td>65 W  </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cpu-td-info">
+                <b>*</b> При розгоні процесора він може вимагати часом у 2 рази більше заявленого енергоспоживання. Варто вибирати блок живлення із запасом.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="title-4">Підтримка оперативної пам'яті</h3>
+        <table class="cpu-table compare-table">
+          <tbody>
+            <tr class="sticky">
+                <th class="th-unknown"></th><th class="th-first">Процесор №1</th><th class="th-second">Процесор №2</th>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Тип</td>
+              <td>DDR4-2666</td>
+              <td>DDR4-3200</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Швидкість пам'яті</td>
+              <td>до 41.6 GB/s</td>
+              <td>до 51.196 GB/s</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Кількість каналів пам'яті</td>
+              <td>2  </td>
+              <td>2  </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Максимальний обсяг пам'яті</td>
+              <td>128 GB  </td>
+              <td>128 GB  </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="title-4">Додатково</h3>
+        <table class="cpu-table compare-table"> 
+          <tbody>
+            <tr class="sticky">
+                <th class="th-unknown"></th><th class="th-first">Процесор №1</th><th class="th-second">Процесор №2</th>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">PCI Express</td>
+              <td>3.0 </td>
+              <td>4.0 </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Технологічний процес</td>
+              <td> 14 nm </td>
+              <td> 7 nm </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Сумісність із Windows 11</td>
+              <td>+ </td>
+              <td>+ </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Кеш 1-го рівня</td>
+              <td>64K </td>
+              <td>64K </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Кеш 2-го рівня</td>
+              <td>256K </td>
+              <td>512K </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Кеш 3-го рівня</td>
+              <td>9 MB   </td>
+              <td>32 MB    <span class="green">(+255.6%)</span> </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Розблокований множник</td>
+              <td>-</td>
+              <td>+ </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Доступні технології</td>
+              <td>Intel® SSE4.1. Intel® SSE4.2. Intel® AVX2 </td>
+              <td>86x MMX </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+
+<!--
+  <div class="vs-winner">
+    <h2>Победитель</h2>
+    <p>
+      После проведенных тестов определился победитель. В совокупности всех результатов он лучше своего конкурента.
+    </p>
+    <div class="vs-winner-block">
+      <div class="vs-winner-title">
+        <img src="../../icons/winner.svg" alt="Winner">
+        <span>          AMD Ryzen 5 5600X
+                  </span>
+      </div>
+    </div>
+  </div>
+-->
+</div>
+        </div>
+    </div>
+  </div>    
+                
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./img/icons/instagram.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/twitter.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/discord.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/steam.svg" alt="Link"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 diploma.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script async="" src="./js/app.js"></script>
+</body>
+</html>

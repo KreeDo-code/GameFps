@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game FPS</title>
+    <link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="../index.html" class="logo"><strong>G@me</strong> FPS</a>
+
+                <button class="dark-mode-btn">
+                    <img src="../img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="../img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="../index.html" class="nav-list__link nav-list__link--active">Projects</a></li>
+                   <li class="nav-list__item"><a href="../donation.html" class="nav-list__link">Donations for UA</a></li>
+                    <li class="nav-list__item"><a href="../contacts.html" class="nav-list__link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <div class="project-details">
+                <h1 class="title-1">Counter-Strike: Global Offensive</h1>
+<!--                <img src="./img/projects/cyberpunk-big.jpg" alt="" class="project-details__cover">-->
+                <div class="game-container" itemscope="" itemprop="itemReviewed" itemtype="https://schema.org/VideoGame">
+  
+<!--
+  <div class="search_game">
+    <label class="choose_cpu_class"><div class="choose_game_page"><input class="search-content" placeholder="Поиск другой игры..." name="search_1" onkeyup="javascript:load_data(this.value, 'games', '1', 'one')" autocomplete="off"><span id="search_result_1"></span></div></label>
+  </div>
+-->
+  <div class="cirt-header-background" style="background: url( ../img/projects/poster_cs_go.jpg) no-repeat; background-size:cover;">
+    <div class="cirt-header">
+        <div class="cirt-img">
+        <img itemprop="image" src="../img/projects/logo_cs_go_2.jpg" alt="Cs:Go">
+      </div>
+      <div class="cirt-header-info">    
+        <ul class="black">
+          <li ><span class="gray">Разработчик:</span> Valve</li>
+          <li><span class="gray">Дата выхода:</span> Aug 21, 2012</li>
+          <li><span class="gray">Рейтинг Metacritic:</span> 83</li>
+        </ul>
+      </div>
+      <div class="rating-background" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+        <div class="rating-top">
+          <div class="rating">
+            <div class="rating-stars">
+              <meta itemprop="worstRating" content="1"><meta itemprop="bestRating" content="5">
+              <div class="current-rating" style="width:83%;"></div>
+              <div class="r1" onclick="doRate('1', 'gta-5')">1</div>
+              <div class="r2" onclick="doRate('2', 'gta-5')">2</div>
+              <div class="r3" onclick="doRate('3', 'gta-5')">3</div>
+              <div class="r4" onclick="doRate('4', 'gta-5')">4</div>
+              <div class="r5" onclick="doRate('5', 'gta-5')">5</div>
+            </div>
+          </div>
+          <div class="rating-number">
+            <div class="rating-value" itemprop="ratingValue">4.1</div><span>/5</span>
+          </div>
+        </div>
+        <div class="rating-count">
+          Всего голосов: <span itemprop="reviewCount">32</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cirt-system-info">
+    <div class="cirt-system-descr">
+      <p>
+        <span class="pp">Дізнайтеся, <strong>чи піде CS:GO  на Вашому ПК</strong> або будь-якої іншої конфігурації. Просто вкажіть процесор, відеокарту, кількість оперативної пам'яті, і ми сформуємо для Вас звіт продуктивності.</span>
+      </p>
+        <p class="download-info"><span class="pp"><b><br>Скачайте нашу програму для Windows</b>, щоб швидко дізнатися параметри своїх комплектуючих.</span></p>
+    </div>
+    <div class="download-programm">
+      <a href="../public/program/1VS1.SITE.exe">Скачати</a>
+    </div>
+  </div>
+                    
+<div class="test-info">
+        <div class="choose_configuration">
+    <form action="..." method="post" class="cirt-form">
+      <input type="hidden" name="_token" value="JM6Lo6yBOi6GX0OkUwsG0n4ySj8mZwmlLsGZYaC4">      <label class="choose_cirt">Процесор<div class="choose_cpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_cpus" onkeyup="javascript:load_data(this.value, 'cpus', 'cpus', 'game')" autocomplete="off"><span id="search_result_cpus"></span></div></label>
+      <label class="choose_cirt">Відеокарта<div class="choose_gpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_videocards" onkeyup="javascript:load_data(this.value, 'videocards', 'videocards', 'game')" autocomplete="off"><span id="search_result_videocards"></span></div></label>
+      <label class="choose_cirt">ОЗУ<select class="choose_ram_input" name="search_ram">
+                <option value="1">1 ГБ</option>
+        <option value="2">2 ГБ</option>
+        <option value="3">3 ГБ</option>
+        <option value="4">4 ГБ</option>
+        <option value="6">6 ГБ</option>
+        <option value="8">8 ГБ</option>
+        <option value="10">10 ГБ</option>
+        <option value="12">12 ГБ</option>
+        <option value="16">16 ГБ</option>
+        <option value="32">32 ГБ</option>
+        <option value="64">64 ГБ</option>
+      </select></label>
+      <button type="submit" class="send_configuration">Перевірити</button>
+    </form>
+  </div>
+      </div>
+<!--
+  <div class="ya-rtb">
+     Yandex.RTB R-A-1981982-1 
+    <div id="yandex_rtb_R-A-1981982-1"></div>
+    <script>window.yaContextCb.push(()=>{
+      Ya.Context.AdvManager.render({
+        renderTo: 'yandex_rtb_R-A-1981982-1',
+        blockId: 'R-A-1981982-1'
+      })
+    })</script>
+  </div>
+-->
+  <div class="game-system-req">
+    <div class="game-system-req-min">
+      <span class="game-system-req-header">Мінімальні системні вимоги</span>
+      <div class="gsrm-data-min">
+        <div class="gsrm-object">
+          <div class="gsrm-cpu">
+          </div>
+          <div class="gsrm-text">
+            <div>Процессор: <span>Intel Core 2 Duo E6600 або AMD Phenom X3 8750</span></div>
+<!--              <img src="../icons/success.svg" alt="result for minimal cpu">-->
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-ram">
+          </div>
+          <div class="gsrm-text">
+            <div>Оперативна пам'ять: <span>2 GB</span></div>
+<!--              <img src="../icons/success.svg" alt="result for minimal ram">-->
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-gpu">
+          </div>
+          <div class="gsrm-text">
+            <div>Відеокарта: <span>nVidia GeForce 8800 або ATI Radeon HD 2900</span></div>
+<!--              <img src="../icons/success.svg" alt="result for minimal gpu">-->
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-hdd">
+          </div>
+          <div class="gsrm-text">
+            <div>Займане місце на диску:</div> 15 GB
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-os">
+          </div>
+          <div class="gsrm-text">
+            <div>Операційна система:</div> Windows XP
+          </div>
+        </div>
+      </div>
+      <div class="percent_req"><span class="green"><b>99.4 %</b></span> відомих відеокарт та процесорів підходять під мінімальні вимоги.</div>
+    </div>
+    <div class="game-system-req-max">
+      <span class="game-system-req-header">Рекомендовані системні вимоги</span>
+      <div class="gsrm-data-max">
+        <div class="gsrm-object">
+          <div class="gsrm-cpu">
+          </div>
+          <div class="gsrm-text">
+            <div>Процессор: <span>Intel Core 2 Duo або AMD Phenom II X3</span></div>
+<!--              <img src="../icons/success.svg" alt="result for recommended cpu">-->
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-ram">
+          </div>
+          <div class="gsrm-text">
+            <div>Оперативна пам'ять: <span>4 GB</span></div>
+<!--              <img src="../icons/success.svg" alt="result for recommended ram">-->
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-gpu">
+          </div>
+          <div class="gsrm-text">
+            <div>Відеокарта: <span>nVidia GeForce GTX 480  або  Radeon HD 6970</span></div>
+<!--              <img src="../icons/success.svg" alt="result for recommended gpu">-->
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-hdd">
+          </div>
+          <div class="gsrm-text">
+            <div>Займане місце на диску:</div> 16 GB
+          </div>
+        </div>
+        <div class="gsrm-object">
+          <div class="gsrm-os">
+          </div>
+          <div class="gsrm-text">
+            <div>Операційна система:</div> Windows 7
+          </div>
+        </div>
+      </div>
+      <div class="percent_req"><span class="green"><b>98.6 %</b></span> відомих відеокарт та процесорів підходять під рекомендовані вимоги.</div>
+    </div>
+  </div>
+</div>
+<div class="result-of-test">
+    <div class="result-title">
+            <img src="../img/icons/success.svg" alt="warning">
+      <h2>Тестовий результат</h2>
+          </div>
+    <div class="text-info">
+    <p class="text-info-p">
+       Це <b>тестові дані</b> про кількість FPS у грі, які складені за допомогою аналізу рекомендованих вимог. Варто пам'ятати, що не всі ігри мають оптимізацію під заявлені вимоги. Для цього були взяті наступні комплектуючі:</p>
+      <ul >
+        <li>CPU: ...</li>
+        <li>GPU: ...</li>
+        <li>RAM: ...</li>
+      </ul>
+       <p class="text-info-p">Для <b>перевірки свого комп'ютера чи ноутбука</b>, введіть назву процесора, відеокарти та вкажіть обсяг оперативної пам'яті.
+          </p></div>
+        <div class="fps-result-block">
+      <div class="fps-result-element">
+        <div class="fps-result-title">
+          Низькі 720p (1280x720px)
+        </div>
+          <span class="green">... FPS</span>
+      </div>
+      <div class="fps-result-element">
+        <div class="fps-result-title">
+          Середні 1080p (1920x1080px)
+        </div>
+          <span class="green">... FPS</span>
+      </div>
+      <div class="fps-result-element">
+        <div class="fps-result-title">
+        Високі 1080p (1920x1080px)
+        </div>
+          <span class="green">... FPS</span>
+      </div>
+      <div class="fps-result-element">
+        <div class="fps-result-title">
+        Ультра 1080p (1920x1080px)
+        </div>
+          <span class="green">... FPS</span>
+      </div>
+    </div>
+<!--
+    <div class="fps-confirmed-block">
+      <div class="fps-confirmed">
+        <p>Совпал ли наш <strong>ФПС в игре Grand Theft Auto V (GTA 5)</strong> с тем, который Вы получаете на своем компьютере или ноутбке?</p>
+        <div class="fps-confirmed-buttons">
+          <button class="fc-yes" onclick="sendConfirmedFps()">Да, совпал</button>
+          <button class="fc-no" onclick="openModalFps()">Увы, нет</button>
+        </div>
+        <div class="fps-confirmed-result"></div>
+      </div>
+            <div class="fps-users-confirmed">
+        <span>153</span>
+      <p>Столько человек проголосовало за совпадение ФПС у данной игры.</p>
+      </div>
+          </div>
+-->
+    <div class="your-gpu-test">
+      <div class="your-gpu">
+        <img src="https://1vs1.site/icons/gpu.svg" src="../icons/no_image.jpg" alt="Відеокарта" class="lozad">
+        ...(Назва відеокарти)...
+      </div>
+      <p class="text-info-p">
+         Відеокарта має <span class="green"><b> ... </b></span> зі 100 можливих балів.
+                  Вона дорівнює потужності з рекомендованою.
+              </p>
+      <div class="charts">
+        <div class="chart-req">
+          <div class="chart-req-score" style="width:calc(11.2% - 20px)">
+          </div>
+          <div class="chart-req-name">
+            nVidia GeForce 8800
+          </div>
+          <div class="chart-req-result">
+            1.5
+          </div>
+        </div>
+        <div class="chart-your">
+          <div class="chart-your-score" style="width:calc(11.2% - 20px)">
+          </div>
+          <div class="chart-your-name">
+            ...(Назва відеокарти)...
+          </div>
+          <div class="chart-your-result">
+            ...
+                      </div>
+        </div>
+      </div>
+    </div>
+    <div class="your-cpu-test">
+      <div class="your-cpu">
+        <img src="https://1vs1.site/icons/cpu.svg" src="../icons/no_image.jpg" alt="Процесор" class="lozad">
+        ...(Назва процесору)...
+      </div>
+      <p class="text-info-p" >
+         Процесор має <span class="green"><b> ... </b></span> зі 100 можливих балів.
+                   Він дорівнює потужності з рекомендованим.
+              </p>
+      <div class="charts">
+        <div class="chart-req">
+          <div class="chart-req-score" style="width:calc(4.7% - 20px)">
+          </div>
+          <div class="chart-req-name">
+            Intel Core 2 Duo E6600
+          </div>
+          <div class="chart-req-result">
+            1.7
+          </div>
+        </div>
+        <div class="chart-your">
+          <div class="chart-your-score" style="width:calc(4.7% - 20px)">
+          </div>
+          <div class="chart-your-name">
+            ...(Назва процесору)...
+          </div>
+          <div class="chart-your-result">
+            ...
+                      </div>
+        </div>
+      </div>
+    </div>
+    <div class="send-fps">
+      <p class="text-info-p">Результати не збігаються із Вашою реальністю? Надішліть свою конфігурацію та FPS, щоб ми могли зробити результати точнішими.</p>
+      <button class="send-fps-button" onclick="openModalFps()">Відправити FPS</button>
+    </div>
+  </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="../img/icons/instagram.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="../img/icons/twitter.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="../img/icons/discord.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="../img/icons/steam.svg" alt="Link"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 Diplom</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
