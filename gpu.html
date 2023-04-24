@@ -7,8 +7,6 @@
     <title>Game FPS</title>
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/main.css">
-    
-  
 </head>
 <body>
     <nav class="nav">
@@ -23,9 +21,9 @@
 
                 <ul class="nav-list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Projects</a></li>
-                    <li class="nav-list__item"><a href="./cpu.html" class="nav-list__link nav-list__link--active">
+                    <li class="nav-list__item"><a href="./cpu.html" class="nav-list__link">
                         Comparison CPU </a></li>
-                    <li class="nav-list__item"><a href="./gpu.html" class="nav-list__link">
+                    <li class="nav-list__item"><a href="./gpu.html" class="nav-list__link nav-list__link--active">
                         Comparison GPU </a></li>
                     <li class="nav-list__item"><a href="./donation.html" class="nav-list__link">Donations for UA</a></li>
                     <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
@@ -37,13 +35,13 @@
     <main class="section">
         <div class="container">
             <div class="project-details">
-                <h1 class="title-1">Порівняння процесорів</h1>
-               <img src="./img/poster_cpu.jpg" alt="" class="project-details__cover">
+                <h1 class="title-1">Порівняння відеокарт</h1>
+               <img src="./img/poster_gpu.jpg" alt="" class="project-details__cover">
                  <div class="vs-info">
         <div class="choose_configuration">
     <form action="..." method="post" class="cirt-form-cpu">
-      <input type="hidden" name="_token" value="JM6Lo6yBOi6GX0OkUwsG0n4ySj8mZwmlLsGZYaC4">      <label class="choose_cirt">Процесор №1<div class="choose_cpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_cpus" onkeyup="javascript:load_data(this.value, 'cpus', 'cpus', 'game')" autocomplete="off"><span id="search_result_cpus"></span></div></label>
-      <label class="choose_cirt">Процесор №2<div class="choose_cpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_videocards" onkeyup="javascript:load_data(this.value, 'videocards', 'videocards', 'game')" autocomplete="off"><span id="search_result_videocards"></span></div></label>
+      <input type="hidden" name="_token" value="JM6Lo6yBOi6GX0OkUwsG0n4ySj8mZwmlLsGZYaC4">      <label class="choose_cirt">Відеокарта №1<div class="choose_gpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_cpus" onkeyup="javascript:load_data(this.value, 'cpus', 'cpus', 'game')" autocomplete="off"><span id="search_result_cpus"></span></div></label>
+      <label class="choose_cirt">Відеокарта №2<div class="choose_gpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_videocards" onkeyup="javascript:load_data(this.value, 'videocards', 'videocards', 'game')" autocomplete="off"><span id="search_result_videocards"></span></div></label>
       <button type="submit" class="send_configuration">Порівняти</button>
     </form>
   </div>
@@ -56,25 +54,26 @@
     </div> 
 -->
             <div class="vs-benchs">
-    <h2 class="title-3">Порівняння у бенчмарках</h2>
+    <h2 class="title-3">Порівняння у бенчмарку</h2>
     <div class="cpu-tabs">
     <div class="buttonWrapper">
       <button class="tab-button active" data-id="passmark">Passmark</button>
+<!--
                         <button class="tab-button" data-id="geekbench_single">GeekBench 5 Single-Core</button>
                   <button class="tab-button" data-id="geekbench_multi">GeekBench 5 Multi-Core</button>
+-->
                   </div>
     <div class="contentWrapper">
       <div class="content active" id="passmark">
         <p class="text-info-p">
-          У бенчмарку Passmark проводиться розширена перевірка процесора за допомогою багатопоточності. Виконуються складні математичні обчислення, включаючи фізичне моделювання, стиснення та шифрування.
-          
+          За допомогою цього бенчмарку відеокарти перевіряються 4 тестами, використовуючи версії DirectX (9, 10, 11, 12). На 12 версії по можливості "графічний чіп" перевіряється і в 4K роздільній здатності. Також проводиться ще кілька тестів за допомогою DirectCompute.
         </p>
         <div class="cpu-bench">
           <div class="cpu-bench-chart">
             <div class="cpu-bench-score" style="width: 9.7%">
             </div>
             <div class="cpu-bench-name">
-              Процесор №1
+              Відеокарта №1
             </div>
             <div class="cpu-bench-result">
               бали             </div>
@@ -86,7 +85,7 @@
             <div class="cpu-bench-score" style="width: 22.4%">
             </div>
             <div class="cpu-bench-name">
-              Процесор №2
+                Відеокарта №2
             </div>
             <div class="cpu-bench-result">
               бали  (+... %)             </div>
@@ -94,6 +93,7 @@
           
         </div>
       </div>
+<!--
                         <div class="content" id="geekbench_single">
             <p class="text-info-p">
               GeekBench Single-Core встановлює завдання процесора, які він повинен виконати за допомогою одного потоку. Чим швидше процесор виконає завдання – тим більше балів отримує.
@@ -153,10 +153,11 @@
               
             </div>
           </div>
+-->
         <div class="vs-compare-basic">
     <h2 class="title-3">Порівняння базових характеристик</h2>
     <p class="text-info-p">
-      Характеристики конкретно описують технічні дані процесора і дозволяють дізнатися багато цікавого: який сокет має бути у материнської плати при покупці процесора, скільки ядер і потоків у процесора, яка частота і так далі. Це основні дані про потужність процесора, але більшою мірою потрібно враховувати реальні тести у програмах та іграх.
+     Порівняйте обсяги пам'яті у відеокарт, частоту ядра, TDP (тепловиділення) та інші характеристики, які здебільшого відповідають за продуктивність відеокарти.
     </p>
     <div class="compare-tables">
       <div class="cpu-tables-parts">
@@ -165,143 +166,120 @@
 
           <tbody>
             <tr class="sticky">
-                <th class="th-unknown"></th><th class="th-first">Процесор №1</th><th class="th-second">Процесор №2</th>
+                <th class="th-unknown"></th><th class="th-first">Відеокарта №1</th><th class="th-second">Відеокарта №2</th>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Тип пам'яті</td>
+              <td>GDDR6X </td>
+              <td>GDDR6 </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Обсяг пам'яті</td>
+              <td>12 GB  </td>
+              <td>12 GB  </td>
             </tr>
             <tr>
-              <td class="cell-h">Сокет підключення</td>
-              <td>FCLGA1151 </td>
-              <td>AM4 </td>
+              <td class="cell-h">Пропускна спроможність пам'яті</td>
+              <td>508.8 GB/s  <span class="green">(+41.3%) </span>  </td>
+              <td>360 GB/s  </td>
             </tr>
             <tr>
               <td colspan="3" class="cpu-td-info">
-                <b>*</b> Сокет підключення – важлива складова. По ньому підбирається материнська плата.
+                <b>*</b> Пропускна здатність – важливий фактор продуктивності відеокарти. Ця величина залежить від частоти пам'яті (MHz) та ширини шини пам'яті. Чим вище ці два параметри, тим більшою буде пропускна спроможність.
               </td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Кількість ядер</td>
-              <td>6  </td>
-              <td>6  </td>
+              <td class="cell-h">Частота пам'яті</td>
+              <td>21.2 GB/s </td>
+              <td>15000 MHz </td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Кількість потоків</td>
-              <td>6  </td>
-              <td>12   <span class="green">(+100%)</span> </td>
+              <td class="cell-h">Ширина шини пам'яті</td>
+              <td>192 Bit  </td>
+              <td>192 Bit  </td>
             </tr>
-            <tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Базова частота ядра</td>
+              <td>2610 MHz</td>
+              <td>1320 MHz</td>
+            </tr>
+            <tr class="cpu-tr-alone">
               <td class="cell-h">Максимальна тактова частота</td>
-              <td>4.1 GHz  </td>
-              <td>4.6 GHz   <span class="green">(+12.2%)</span> </td>
-            </tr>
-            <tr>
-              <td colspan="3" class="cpu-td-info">
-                <b>*</b> Максимальна частота процесора досягається за допомогою навантаження на процесор і при необхідності. Також можна розігнати процесор, виставивши для цього відповідний множник.
-              </td>
+              <td>2610 MHz </td>
+              <td>1777 MHz </td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Базова тактова частота</td>
-              <td>2.9 GHz  </td>
-              <td>3.7 GHz   <span class="green">(+27.6%)</span> </td>
-            </tr>
-            <tr class="cpu-tr-alone">
-              <td class="cell-h">Максимальна температура</td>
-              <td>100  °C </td>
-              <td> °C </td>
-            </tr>
-            <tr>
-              <td class="cell-h">Вбудована графічна картка</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td colspan="3" class="cpu-td-info">
-                <b>*</b> Дозволяє комп'ютеру працювати без повноцінної дискретної відеокарти та без графічного чіпа на материнській платі.
-              </td>
+              <td class="cell-h">Швидкість текстурування</td>
+              <td>626.4    <span class="green">(+214.8%)</span> </td>
+              <td>199.0   </td>
             </tr>
             <tr>
               <td class="cell-h">Енергоспоживання</td>
-              <td>65 W  </td>
-              <td>65 W  </td>
+              <td>285 W  </td>
+              <td>170 W  <span class="green">(-67.6%) </span>  </td>
             </tr>
             <tr>
               <td colspan="3" class="cpu-td-info">
-                <b>*</b> При розгоні процесора він може вимагати часом у 2 рази більше заявленого енергоспоживання. Варто вибирати блок живлення із запасом.
+                <b>*</b> При великих навантаженнях на відеокарту та розгоні енергоспоживання (TDP) може збільшуватися.
               </td>
             </tr>
-          </tbody>
-        </table>
-        <h3 class="title-4">Підтримка оперативної пам'яті</h3>
-        <table class="cpu-table compare-table">
-          <tbody>
-            <tr class="sticky">
-                <th class="th-unknown"></th><th class="th-first">Процесор №1</th><th class="th-second">Процесор №2</th>
-            </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Тип</td>
-              <td>DDR4-2666</td>
-              <td>DDR4-3200</td>
-            </tr>
-            <tr class="cpu-tr-alone">
-              <td class="cell-h">Швидкість пам'яті</td>
-              <td>до 41.6 GB/s</td>
-              <td>до 51.196 GB/s</td>
-            </tr>
-            <tr class="cpu-tr-alone">
-              <td class="cell-h">Кількість каналів пам'яті</td>
-              <td>2  </td>
-              <td>2  </td>
-            </tr>
-            <tr class="cpu-tr-alone">
-              <td class="cell-h">Максимальний обсяг пам'яті</td>
-              <td>128 GB  </td>
-              <td>128 GB  </td>
+              <td class="cell-h">PCI Express</td>
+              <td>PCIe 4.0 x16</td>
+              <td>PCIe 4.0 x16</td>
             </tr>
           </tbody>
         </table>
         <h3 class="title-4">Додатково</h3>
-        <table class="cpu-table compare-table"> 
+        <table class="cpu-table compare-table">
           <tbody>
             <tr class="sticky">
-                <th class="th-unknown"></th><th class="th-first">Процесор №1</th><th class="th-second">Процесор №2</th>
-            </tr>
-            <tr class="cpu-tr-alone">
-              <td class="cell-h">PCI Express</td>
-              <td>3.0 </td>
-              <td>4.0 </td>
+                <th class="th-unknown"></th><th class="th-first">Відеокарта №1</th><th class="th-second">Відеокарта №2</th>
             </tr>
             <tr class="cpu-tr-alone">
               <td class="cell-h">Технологічний процес</td>
-              <td> 14 nm </td>
-              <td> 7 nm </td>
+              <td>4 nm</td>
+              <td>8 nm</td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Сумісність із Windows 11</td>
-              <td>+ </td>
-              <td>+ </td>
+              <td class="cell-h">Довжина</td>
+              <td>336 mm</td>
+              <td>242 mm</td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Кеш 1-го рівня</td>
-              <td>64K </td>
-              <td>64K </td>
+              <td class="cell-h">Додаткові роз'єми живлення</td>
+              <td>1x 12-pin </td>
+              <td>1x 12-pin </td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Кеш 2-го рівня</td>
-              <td>256K </td>
-              <td>512K </td>
+              <td class="cell-h">DirectX</td>
+              <td>12 Ultimate (12_2)</td>
+              <td>12 Ultimate</td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Кеш 3-го рівня</td>
-              <td>9 MB   </td>
-              <td>32 MB    <span class="green">(+255.6%)</span> </td>
+              <td class="cell-h">Шейдерна модель</td>
+              <td>6.6</td>
+              <td>6.5</td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Розблокований множник</td>
-              <td>-</td>
-              <td>+ </td>
+              <td class="cell-h">OpenGL</td>
+              <td>4.6</td>
+              <td>4.6</td>
             </tr>
             <tr class="cpu-tr-alone">
-              <td class="cell-h">Доступні технології</td>
-              <td>Intel® SSE4.1. Intel® SSE4.2. Intel® AVX2 </td>
-              <td>86x MMX </td>
+              <td class="cell-h">OpenCL</td>
+              <td>3.0</td>
+              <td>2.0</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Vulkan</td>
+              <td>1.3</td>
+              <td>1.2</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">CUDA</td>
+              <td>8.9</td>
+              <td>8.6</td>
             </tr>
           </tbody>
         </table>

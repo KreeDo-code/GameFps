@@ -926,13 +926,13 @@ border-radius: 10px;
 }
 .buttonWrapper button:hover {
   padding: 5px;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #e61919;
   border-radius: 4px;
 }
 .buttonWrapper button.active {
   background-color: #e7e7ef ;
   color: rgb(0, 0, 0);
-  border-bottom: 4px solid rgb(92, 191, 102);
+  border-bottom: 5px solid rgb(97, 93, 183);
   border-radius: 4px;
   padding: 8px;
 }
@@ -1216,7 +1216,7 @@ color: #636363;
 cursor:pointer;
 }
 .paginate-active {
-  background-color: #1FB6F2;
+  background-color: #67adc9;
   color: white !important;
   border: none !important;
 }
