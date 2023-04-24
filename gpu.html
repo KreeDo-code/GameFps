@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game FPS</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>G@me</strong> FPS</a>
+
+                <button class="dark-mode-btn">
+                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Projects</a></li>
+                    <li class="nav-list__item"><a href="./cpu.html" class="nav-list__link">
+                        Comparison CPU </a></li>
+                    <li class="nav-list__item"><a href="./gpu.html" class="nav-list__link nav-list__link--active">
+                        Comparison GPU </a></li>
+                    <li class="nav-list__item"><a href="./donation.html" class="nav-list__link">Donations for UA</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <div class="project-details">
+                <h1 class="title-1">Порівняння відеокарт</h1>
+               <img src="./img/poster_gpu.jpg" alt="" class="project-details__cover">
+                 <div class="vs-info">
+        <div class="choose_configuration">
+    <form action="..." method="post" class="cirt-form-cpu">
+      <input type="hidden" name="_token" value="JM6Lo6yBOi6GX0OkUwsG0n4ySj8mZwmlLsGZYaC4">      <label class="choose_cirt">Відеокарта №1<div class="choose_gpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_cpus" onkeyup="javascript:load_data(this.value, 'cpus', 'cpus', 'game')" autocomplete="off"><span id="search_result_cpus"></span></div></label>
+      <label class="choose_cirt">Відеокарта №2<div class="choose_gpu_input"><input class="search-content" placeholder="Введіть назву..." name="search_videocards" onkeyup="javascript:load_data(this.value, 'videocards', 'videocards', 'game')" autocomplete="off"><span id="search_result_videocards"></span></div></label>
+      <button type="submit" class="send_configuration">Порівняти</button>
+    </form>
+  </div>
+      </div>
+<!--
+                <div class="vs-choose-inputs">
+      <label class="choose_cpu_class"><div class="choose_cpu_page"><input class="search-content" data-id="288" data-hurl="Core-i5-9400F" placeholder="Введите название..." name="search_1" onkeyup="javascript:load_data(this.value, 'cpus', '1', 'compare')" autocomplete="off" value=""><span id="search_result_1"></span></div></label>     
+      <label class="choose_cpu_class"><div class="choose_cpu_page"><input class="search-content" data-id="84" data-hurl="Ryzen-5-5600X" placeholder="Введите название..." name="search_2" onkeyup="javascript:load_data(this.value, 'cpus', '2', 'compare')" autocomplete="off" value=""><span id="search_result_2"></span></div></label>
+               <button type="submit" class="send_configuration">Перевірити</button>     
+    </div> 
+-->
+            <div class="vs-benchs">
+    <h2 class="title-3">Порівняння у бенчмарку</h2>
+    <div class="cpu-tabs">
+    <div class="buttonWrapper">
+      <button class="tab-button active" data-id="passmark">Passmark</button>
+<!--
+                        <button class="tab-button" data-id="geekbench_single">GeekBench 5 Single-Core</button>
+                  <button class="tab-button" data-id="geekbench_multi">GeekBench 5 Multi-Core</button>
+-->
+                  </div>
+    <div class="contentWrapper">
+      <div class="content active" id="passmark">
+        <p class="text-info-p">
+          За допомогою цього бенчмарку відеокарти перевіряються 4 тестами, використовуючи версії DirectX (9, 10, 11, 12). На 12 версії по можливості "графічний чіп" перевіряється і в 4K роздільній здатності. Також проводиться ще кілька тестів за допомогою DirectCompute.
+        </p>
+        <div class="cpu-bench">
+          <div class="cpu-bench-chart">
+            <div class="cpu-bench-score" style="width: 9.7%">
+            </div>
+            <div class="cpu-bench-name">
+              Відеокарта №1
+            </div>
+            <div class="cpu-bench-result">
+              бали             </div>
+          </div>
+          
+        </div>
+        <div class="cpu-bench">
+          <div class="cpu-bench-chart">
+            <div class="cpu-bench-score" style="width: 22.4%">
+            </div>
+            <div class="cpu-bench-name">
+                Відеокарта №2
+            </div>
+            <div class="cpu-bench-result">
+              бали  (+... %)             </div>
+          </div>
+          
+        </div>
+      </div>
+<!--
+                        <div class="content" id="geekbench_single">
+            <p class="text-info-p">
+              GeekBench Single-Core встановлює завдання процесора, які він повинен виконати за допомогою одного потоку. Чим швидше процесор виконає завдання – тим більше балів отримує.
+            </p>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 77.8%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №1
+                </div>
+                <div class="cpu-bench-result">
+                   бали (+... %)                 </div>
+              </div>
+            </div>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 50.8%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №2
+                </div>
+                <div class="cpu-bench-result">
+                  бали
+                </div>
+              </div>
+            
+            </div>
+          </div>
+                  <div class="content" id="geekbench_multi">
+            <p class="text-info-p">
+              GeekBench 5 Multi-Core дозволяє обчислити продуктивність процесора за допомогою всіх доступних потоків.
+            </p>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 31.9%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №1
+                </div>
+                <div class="cpu-bench-result">
+                   бали (+... %)                 </div>
+              </div>
+              
+            </div>
+            <div class="cpu-bench">
+              <div class="cpu-bench-chart">
+                <div class="cpu-bench-score" style="width: 17.8%">
+                </div>
+                <div class="cpu-bench-name">
+                  Процесор №2
+                </div>
+                <div class="cpu-bench-result">
+                  бали
+                </div>
+              </div>
+              
+            </div>
+          </div>
+-->
+        <div class="vs-compare-basic">
+    <h2 class="title-3">Порівняння базових характеристик</h2>
+    <p class="text-info-p">
+     Порівняйте обсяги пам'яті у відеокарт, частоту ядра, TDP (тепловиділення) та інші характеристики, які здебільшого відповідають за продуктивність відеокарти.
+    </p>
+    <div class="compare-tables">
+      <div class="cpu-tables-parts">
+        <h3 class="title-4">Основні характеристики</h3>
+        <table class="cpu-table compare-table">
+
+          <tbody>
+            <tr class="sticky">
+                <th class="th-unknown"></th><th class="th-first">Відеокарта №1</th><th class="th-second">Відеокарта №2</th>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Тип пам'яті</td>
+              <td>GDDR6X </td>
+              <td>GDDR6 </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Обсяг пам'яті</td>
+              <td>12 GB  </td>
+              <td>12 GB  </td>
+            </tr>
+            <tr>
+              <td class="cell-h">Пропускна спроможність пам'яті</td>
+              <td>508.8 GB/s  <span class="green">(+41.3%) </span>  </td>
+              <td>360 GB/s  </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cpu-td-info">
+                <b>*</b> Пропускна здатність – важливий фактор продуктивності відеокарти. Ця величина залежить від частоти пам'яті (MHz) та ширини шини пам'яті. Чим вище ці два параметри, тим більшою буде пропускна спроможність.
+              </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Частота пам'яті</td>
+              <td>21.2 GB/s </td>
+              <td>15000 MHz </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Ширина шини пам'яті</td>
+              <td>192 Bit  </td>
+              <td>192 Bit  </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Базова частота ядра</td>
+              <td>2610 MHz</td>
+              <td>1320 MHz</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Максимальна тактова частота</td>
+              <td>2610 MHz </td>
+              <td>1777 MHz </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Швидкість текстурування</td>
+              <td>626.4    <span class="green">(+214.8%)</span> </td>
+              <td>199.0   </td>
+            </tr>
+            <tr>
+              <td class="cell-h">Енергоспоживання</td>
+              <td>285 W  </td>
+              <td>170 W  <span class="green">(-67.6%) </span>  </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="cpu-td-info">
+                <b>*</b> При великих навантаженнях на відеокарту та розгоні енергоспоживання (TDP) може збільшуватися.
+              </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">PCI Express</td>
+              <td>PCIe 4.0 x16</td>
+              <td>PCIe 4.0 x16</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="title-4">Додатково</h3>
+        <table class="cpu-table compare-table">
+          <tbody>
+            <tr class="sticky">
+                <th class="th-unknown"></th><th class="th-first">Відеокарта №1</th><th class="th-second">Відеокарта №2</th>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Технологічний процес</td>
+              <td>4 nm</td>
+              <td>8 nm</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Довжина</td>
+              <td>336 mm</td>
+              <td>242 mm</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Додаткові роз'єми живлення</td>
+              <td>1x 12-pin </td>
+              <td>1x 12-pin </td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">DirectX</td>
+              <td>12 Ultimate (12_2)</td>
+              <td>12 Ultimate</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Шейдерна модель</td>
+              <td>6.6</td>
+              <td>6.5</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">OpenGL</td>
+              <td>4.6</td>
+              <td>4.6</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">OpenCL</td>
+              <td>3.0</td>
+              <td>2.0</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">Vulkan</td>
+              <td>1.3</td>
+              <td>1.2</td>
+            </tr>
+            <tr class="cpu-tr-alone">
+              <td class="cell-h">CUDA</td>
+              <td>8.9</td>
+              <td>8.6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+
+<!--
+  <div class="vs-winner">
+    <h2>Победитель</h2>
+    <p>
+      После проведенных тестов определился победитель. В совокупности всех результатов он лучше своего конкурента.
+    </p>
+    <div class="vs-winner-block">
+      <div class="vs-winner-title">
+        <img src="../../icons/winner.svg" alt="Winner">
+        <span>          AMD Ryzen 5 5600X
+                  </span>
+      </div>
+    </div>
+  </div>
+-->
+</div>
+        </div>
+    </div>
+  </div>    
+                
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./img/icons/instagram.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/twitter.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/discord.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/steam.svg" alt="Link"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 diploma.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script async="" src="./js/app.js"></script>
+</body>
+</html>
