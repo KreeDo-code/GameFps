@@ -965,45 +965,6 @@ border-radius: 10px;
   display: flex;
 align-items: center;
 }
-.compare_button {
-  display: flex;
-  align-items:center;
-  background: #1FB6F2;
-border-radius: 10px;
-border: none;
-color:white;
-font-size:16px;
-    padding: 15px 25px;
-    font-weight:600;
-    cursor:pointer;
-    margin-left:20px;
-}
-.compare_button:before {
-  content: '';
-  background-image: url(https://1vs1.site/icons/plus.svg);
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  float: left;
-}
-.arrow-up {
-      content: url(https://1vs1.site/icons/arrow-up.svg);
-      width:20px;
-      height:20px;
-      position: absolute;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      top: -59px;
-      background: #0097D3;
-      padding: 10px;
-      border-radius: 50%;
-      left: calc(50% - 20px);
-      cursor:pointer;
-}
 .cpe-link a {
 color: #636363;
 font-weight: 500;
@@ -1042,13 +1003,6 @@ color: #636363;
   color: white;
   z-index: 2;
   border-radius: 10px;
-}
-#loading-image {
-  background-image: url('https://1vs1.site/icons/loading.gif');
-  width: 32px;
-    height: 32px;
-    background-size: contain;
-    margin-right: 10px;
 }
 /* RANGE SLIDER */
 .range-slider {
@@ -1680,7 +1634,7 @@ font-weight: 600;
   display: inline-block;
 }
 .cirt-cards {
-  display: grid;
+  display: grid; 
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -2065,16 +2019,7 @@ margin: 5px 0px;
     margin-bottom: 40px;
     color: white;
 }
-.cih-cpus {
-  background: url(https://1vs1.site/icons/cpus_cat.webp) no-repeat;
-    background-size: cover;
-    background-position: 0% 30%;
-}
-.cih-gpus {
-  background: url(https://1vs1.site/icons/gpus_cat.webp) no-repeat;
-    background-size: cover;
-    background-position: 0% 30%;
-}
+
 .cih {
   position: relative;
     -webkit-backdrop-filter: blur(5px) brightness(0.5);
@@ -2159,7 +2104,7 @@ margin-right: 10px;
 }
 .gsrm-cpu::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/cpu.svg);
+  background-image: url('../img/icons/cpu.svg');
   width: 40px;
   height: 40px;
   margin-right: 10px;
@@ -2169,18 +2114,18 @@ margin-right: 10px;
 }
 .gsrm-ram::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/ram.svg);
+  background-image: url(../img/icons/ram.svg);
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 10px;   
   display: inline-block;
   vertical-align: middle;
   float: left;
 }
 .gsrm-gpu::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/gpu.svg);
-  width: 40px;
+  background-image: url("../img/icons/gpu.svg");
+  width: 40px;  
   height: 40px;
   margin-right: 10px;
   display: inline-block;
@@ -2189,7 +2134,7 @@ margin-right: 10px;
 }
 .gsrm-hdd::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/hdd.svg);
+  background-image: url(../img/icons/hdd.svg);
   width: 40px;
   height: 40px;
   margin-right: 10px;
@@ -2199,7 +2144,7 @@ margin-right: 10px;
 }
 .gsrm-os::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/pc.svg);
+  background-image: url(../img/icons/os.svg);
   width: 40px;
   height: 40px;
   margin-right: 10px;
@@ -2297,7 +2242,7 @@ color:#636363;
 }
 .game-ram-left-svg {
     content: '';
-    background-image: url(https://1vs1.site/icons/ram.svg);
+    background-image: url(../img/icons/ram.svg);
     width: 150px;
     height: 150px;
     margin-right: 30px;
@@ -2305,7 +2250,7 @@ color:#636363;
 }
 .game-hdd-left-svg {
     content: '';
-    background-image: url(https://1vs1.site/icons/hdd.svg);
+    background-image: url(../img/icons/hdd.svg);
     width: 150px;
     height: 150px;
     margin-right: 30px;
@@ -2382,17 +2327,17 @@ font-size: 16px;
 }
 .choose_cpu_input::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/cpu.svg);
+  background-image: url(../img/icons/cpu.svg);
   width: 40px;
   height: 40px;
   margin-right: 10px;
   position: absolute;
   margin-left: 10px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .choose_cpu_page::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/cpu.svg);
+  background-image: url(../img/icons/cpu.svg);
   width: 48px;
   height: 48px;
   margin-right: 10px;
@@ -2402,7 +2347,7 @@ font-size: 16px;
 }
 .choose_game_page::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/hdd.svg);
+  background-image: url(../img/icons/hdd.svg);
   width: 48px;
   height: 48px;
   margin-right: 10px;
@@ -2412,13 +2357,13 @@ font-size: 16px;
 }
 .choose_gpu_input::before {
   content: '';
-  background-image: url(https://1vs1.site/icons/gpu.svg);
+  background-image: url(../img/icons/gpu.svg);
   width: 40px;
   height: 40px;
   margin-right: 10px;
   position: absolute;
   margin-left: 10px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .choose_cirt {
   position: relative;

@@ -354,11 +354,14 @@ html, body {
 }
 
 .project__img {
+    transition: 1s;
     border-radius: 15px;
     width: 300px;
     height: 400px;
    }
-
+.project__img:hover {
+    transform: scale(1.05);
+}
 .project__title {
     padding: 15px 20px 25px;
     font-weight: 700;
