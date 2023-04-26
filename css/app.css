@@ -870,13 +870,13 @@ padding-left: 20px;
   align-items:center;
   height: 70px;
 width: 100%;
-background-color: #1FB6F2;
+background-color: #5C62EC;
 border-radius: 10px;
 box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 .cpu-bench-score {
 position: absolute;
-background-color: #0097D3;
+background-color: #584ec3;
 height: 70px;
 border-radius: 10px;
 }
@@ -926,7 +926,7 @@ border-radius: 10px;
 }
 .buttonWrapper button:hover {
   padding: 5px;
-  border-bottom: 4px solid #e61919;
+  border-bottom: 4px solid #30AB05;
   border-radius: 4px;
 }
 .buttonWrapper button.active {
@@ -2603,10 +2603,10 @@ grid-template-columns: auto 1fr;
   margin-bottom: 30px;
 }
 .chart-req {
-  background-color: #1FB6F2;
+  background-color: #5C62EC;
 }
 .chart-req-score {
-  background-color: #0097D3;
+  background-color: #584ec3;
 }
 .chart-your {
   background-color: #5CBF66;
